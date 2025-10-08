@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Customer Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Customer feedback form</legend>
+        <h2>Customer Feedback</h2>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" ><br><br>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" ><br><br>
+
+        <label for="rating">How satisfied are you?</label>
+        <select id="rating" name="rating">
+           
+            <option >Very Satisfied</option>
+            <option >Satisfied</option>
+            <option >Neutral</option>
+            <option >Dissatisfied</option>
+            <option >Very Dissatisfied</option>
+        </select>
+<br><br>
+<h2>Would you recommend us?</h2>
+        <input type="radio" id="recommend" name="recommend">
+        <label for="recommend">Yes</label>
+        <input type="radio" id="recommend" name="recommend" >
+        <label for="recommend">No</label><br><br>
+        <label for="comments">Additional Comments</label>
+        
+        <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback"></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+</body>
+</html>

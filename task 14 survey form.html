@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <style>
+     body{
+        background-color: pink;
+     }   
+       
+        
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Survey Form</h2>
+
+    <form>
+        <fieldset>
+            <Legend>survey form</Legend>
+        
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" ><br>
+        <br>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" ><br>
+        <br>
+
+
+        <label for="age">Age Group</label>
+        <select id="age" name="age">
+            <option>Select your age group</option>
+            <option >Below 18</option>
+            <option>18 - 30</option>
+            <option >31 - 50</option>
+            <option >Above 50</option>
+        </select><br><br>
+
+       <h2>gender</h2>
+        <input type="radio" id="male" name="male" ><label for="male">Male</label>
+        <input type="radio" id="female" name="female" ><label for="female">Female</label>
+        <input type="radio" id="other" name="other" ><label for="other">Other</label>
+<br><br>
+     <h2>Favorite Movie Genre</h2>
+        <input type="checkbox" id="action" name="action" ><label for="action">Action</label>
+        <input type="checkbox" id="comedy" name="comedy" ><label for="comedy">Comedy</label>
+        <input type="checkbox" id="drama" name="drama" ><label for="drama">Drama</label>
+        <input type="checkbox" id="romance" name="romance" ><label for="romance">Romance</label><br><br>
+
+        <label for="feedback">Additional Feedback</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback..."></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

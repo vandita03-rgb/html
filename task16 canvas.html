@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas 2D Objects</title>
+    <style>
+       
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const can = canvas.getContext("2d");
+
+        can.fillStyle = "blue";
+        can.fillRect(50, 50, 150, 100);
+
+        can.beginPath();
+        can.arc(300, 100, 80, 0, Math.PI * 2);
+        can.fillStyle = "red";
+        can.fill();
+
+        can.beginPath();
+        can.moveTo(400, 50);
+        can.lineTo(500, 150);
+        can.stroke();
+
+        can.beginPath();
+        can.moveTo(550, 300);
+        can.lineTo(500, 200);
+        can.lineTo(600, 200);
+        can.closePath();
+        can.fillStyle = "green";
+        can.fill();
+
+     
+    </script>
+</body>
+</html>
