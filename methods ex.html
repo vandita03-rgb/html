@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Page</title>
+  <style>
+    body {
+      background-color: #c3dee2;
+      font-family: sans-serif;
+      text-align: center;
+     
+    }
+
+    p {
+      font-size: 24px;
+      
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+     
+   
+    }
+
+   
+
+    input {
+      font-size: 16px;
+      padding: 8px;
+      margin: 10px;
+    
+      max-width: 300px;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <p id="name">welcome</p>
+  <button onclick="save()">Click Me</button>
+
+  <form onsubmit="return handleSubmit()">
+      <label for="username">Name</label>
+    <input type="text" id="username"  />
+  <br>
+  <label for="email">email</label>
+    <input type="email" id="email"  />
+    <br>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <script>
+    function save() {
+      document.getElementById("name").innerHTML = "Thank You";
+    }
+
+    function handleSubmit() {
+      const name = document.getElementById("username").value;
+      const email = document.getElementById("email").value;
+
+      alert("Submitted:\nName: " + name + "\nEmail: " + email);
+      return false; 
+    }
+  </script>
+
+</body>
+</html>
